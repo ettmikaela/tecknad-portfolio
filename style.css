@@ -1,0 +1,184 @@
+
+  
+
+:root {
+  --color-green: #c7ffbb;
+  --color-yellow: #ffd401;
+  --color-red: #ff371c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url(
+        https://cdn.glitch.com/25fa3ebc-ba25-40f8-9ab8-afeb61ca382d%2Fhand-61x122.png?v=1610628674712
+      )20 10,
+    auto;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a,
+a * {
+  cursor: url(
+        https://cdn.glitch.com/25fa3ebc-ba25-40f8-9ab8-afeb61ca382d%2Fhand-pekare-61x122.png?v=1610643525204
+      )20 10,
+    auto !important;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin-bottom: 20px;
+  max-width: 400px;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 100%;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.noise {
+  background-image: url(https://cdn.glitch.com/25fa3ebc-ba25-40f8-9ab8-afeb61ca382d%2FNoisefilter%20100x100.png?v=1610614215216);
+  background-repeat: repeat;
+  opacity: 0.04;
+  right: 0px;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 4;
+  position: absolute;
+  pointer-events: none;
+  background-blend-mode: multiply;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  width: 100%;
+  padding: 20px 10vw;
+  position: relative;
+  height: 100px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.container {
+  height: 90vh;
+  width: 80vw;
+  max-width: 1200px;
+  margin: auto;
+  overflow: auto;
+  border-top: 0px;
+  padding: 20px;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  background-color: pink;
+  margin: 10px;
+  padding: 40px 20px;
+}
+
+.project img {
+  max-height: 40vh;
+  max-width: 30vw;
+}
+
+.divider {
+  position: absolute;
+  top: 70px;
+  left: 4vw;
+  right: 4vw;
+  z-index: 50;
+  width: 85vw;
+  margin: auto;
+}
+
+.footer {
+  position: absolute;
+  z-index: 2;
+  right: 2px;
+  bottom: 5vh;
+
+}
+
+.footer img {
+  max-height: 20vh;
+  padding: 10px;
+}
+
+.content {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2vw;
+}
+
+.img {
+  min-width: 100px;
+}
+
+.text {
+}
+
+.overlay-image {
+  position: absolute;
+  width: 30vh;
+  bottom: 0px;
+  right: 10vw;
+}
+
+.no-event {
+  pointer-events: none;
+}
+
+.hue-change {
+  filter: invert(50%) sepia() saturate(10000%) hue-rotate(10deg);
+}
+
+
+@media only screen and (max-width: 400px) {
+
+  .project img {
+    max-width: 50vw;
+  }
+  
+  .footer {
+    width: 70vw;
+  }
+  
+  .overlay-image {
+    width: 70vw;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+
+  .container {
+    height: 75vh;
+  }
+  
+}
